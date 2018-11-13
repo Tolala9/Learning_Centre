@@ -1,6 +1,8 @@
 info
 addition
-/**/All_images/
+/**/_All_images/
+/**/full_size/
+/**/psd_files/
 
 # On layout
 /**/node_modules/
@@ -17,6 +19,7 @@ addition
 
 # Numerous always-ignore extensions
 *.diff
+*.err
 *.err
 *.orig
 *.log
