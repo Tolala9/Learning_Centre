@@ -1,0 +1,55 @@
+.section
+	max-width: 1470px
+	width: calc(100% - 30px)
+	margin-left: auto
+	margin-right: auto
+	&--full-width
+		max-width: none
+		width: 100%
+	&--white
+		background-color: $white
+	&--dark-white
+		background-color: #f2f3f8
+
+@media (min-width: 1500px)
+	.section
+		width: 100%
+
+.section-xs
+	padding-top: 40px
+	padding-bottom: 40px
+
+.section-sm, .section-md, .section-lg, .section-xl
+	padding-top: 60px
+	padding-bottom: 60px
+
+@media (min-width: 1200px)
+	.section-lg
+		padding-top: 90px
+		padding-bottom: 90px
+	.section-xl
+		padding-top: 140px
+		padding-bottom: 140px
+
+.section-relative
+	position: relative
+	z-index: 1
+
+
+.section
+	&--white
+		background-color: white
+	&--gray
+		background-color: $secGray
+
+
+
+.section__after-swiper-modern
+	position: relative
+	background-color: transparent
+	z-index: 10
+
+@media (min-width: 1200px) 
+	.section__after-swiper-modern
+		padding-top: 0
+		margin-top: -63px

@@ -1,0 +1,252 @@
+* 
+	box-sizing: border-box
+
+body
+	font-family: "Roboto", Helvetica, Arial, sans-serif
+	font-weight: 400
+	font-size: 14px
+	line-height: 1.71429
+	letter-spacing: 0.05em
+	color: $greyText
+	background-color: #fff
+	margin: 0
+
+.font-sec
+	font-family: "Montserrat", sans-serif
+.big
+	font-size: 16px
+
+
+h1, h2, h3, h4, h5, h6, [class*='heading-']
+	margin-top: 0
+	margin-bottom: 0
+	font-family: "Montserrat", sans-serif
+	font-weight: 400
+	letter-spacing: 0.05em
+	color: #151515
+h1
+	font-size: 38px
+	line-height: 1.2
+h2
+	font-size: 32px
+	line-height: 1.2
+h3
+	font-size: 24px
+	line-height: 1.2
+h4, .heading-4
+	font-size: 20px
+	line-height: 1.2
+* + h4
+	margin-top: 15px
+i + h4
+	margin-top: 10px
+	& + p
+		margin-top: 8px
+	a:hover
+		color: $greenText
+h5, .heading-5
+	font-size: 18px
+	line-height: 1.441
+h6
+	font-size: 15px
+	line-height: 1.2
+hr 
+	margin-top: 0
+	margin-bottom: 0
+	border-top: 1px solid #90959e
+
+h1 a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+h2 a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+h3 a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+h4 a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+h5 a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+h6 a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+[class*='heading-'] a
+	color: inherit
+	&:focus, &:active
+		color: inherit
+
+@media (min-width: 1200px)
+	.heading-4 + h1
+		margin-top: 25px
+
+
+ul, ol
+	display: block
+	list-style: none;
+	padding: 0
+	margin: 0
+	width: 100%
+li
+	list-style-type: none
+a
+	text-decoration: none
+	transition: 0.25s ease-out
+
+i
+	transition: 0.25s ease-out
+
+	
+
+p
+	margin: 0
+
+img
+	display: inline-block
+	max-width: 100%
+	height: auto
+	vertical-align: middle
+.img-circle
+	border-radius: 50%
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+.fas
+	font-family: "font-awesome-sol"
+
+.divider 
+	line-height: 0
+.divider-default
+	width: 100%
+	height: 1px
+	border-top: 1px solid $grey
+	&+ *
+		margin-top: 25px
+* + .divider-default
+	margin-top: 25px
+.divider-default + .list-lg 
+	margin-top: 35px
+
+.heading-divider-modern
+	position: relative
+	padding-left: 22px
+.heading-divider-modern:before
+	content: ''
+	position: absolute
+	left: 0
+	top: 0
+	bottom: 0
+	width: 4px
+	border-left: 4px solid #00BB6D
+
+.divider-section 
+	width: 100%
+	display: block
+	height: 100px
+	&-xs
+		height: 40px
+
+.page 
+	position: relative
+	overflow: hidden
+	min-height: 100vh !important
+
+
+.page > * 
+	width: 100%
+	margin-left: auto
+	margin-right: auto
+
+
+.page-header 
+	padding: 0
+	margin: 0
+	border-bottom: none
+
+
+.button:focus, .button:active, .button:active:focus 
+	outline: none
+
+.disp-flex
+	display: flex
+
+
+ // **
+ // ** Text Alignment
+ // ** --------------------------------------------------
+
+.text-left
+	text-align: left
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+
+@media (min-width: 768px)
+	html:not(.lt-ie10)
+		.text-sm--left
+			text-align: left
+		.text-sm--center
+			text-align: center
+		.text-sm--right
+			text-align: right
+		.text-sm--justify
+			text-align: justify
+
+
+
+
+label
+	display: inline-block
+	max-width: 100%
+	margin-bottom: 5px
+
+.snackbars
+	padding: 9px 16px
+	margin-left: auto
+	margin-right: auto
+	color: #fff
+	text-align: left
+	background-color: #151515
+	border-radius: 0
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15)
+	font-size: 14px
+	.icon-xxs
+		font-size: 18px
+	p span:last-child
+		padding-left: 14px
+
+.snackbars-left
+	display: inline-block
+	margin-bottom: 0
+
+.snackbars-right
+	display: inline-block
+	float: right
+	text-transform: uppercase
+	&:hover
+		text-decoration: underline
+
+@media (min-width: 480px)
+	.snackbars
+		max-width: 540px
+		padding: 12px 15px
+		font-size: 15px
