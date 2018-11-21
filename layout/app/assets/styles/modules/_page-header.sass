@@ -1,20 +1,50 @@
 .page-header
 	display: flex
-	padding: 40px 15px
+	padding: 15px 40px
 	&__logo
 		flex: 1
+		display: flex
 	&__menu-content
 		display: flex
-		flex: 3
-	&__search
+		flex: 1
+	&__social
 		display: flex
 		margin: auto
 		a
 			color: $greyText
-			font-size: 20px
-			transition: 0.25s ease-out
-			&:hover 
-				color: $greenText
+			font-size: 16px
+			.prymary-socials-frame
+				display: flex
+				margin: auto 0
+				// padding: 7px 8px
+				width: 25px
+				height: 25px
+				line-height: 1
+				border: 1px solid $black
+				border-radius: 8px
+				transition: 0.25s ease-out
+				i
+					margin: auto
+					transition: 0.25s ease-out
+				&:hover, &:focus
+					background-color: $blue
+					i
+						color: $white
+
+	&__logo-text
+		display: inline-block	
+		margin: auto 10px
+		text-align: center
+		.first-text
+			font-size: 16px	
+			line-height: 16px
+			margin-bottom: 15px
+		.sec-text
+			font-size: 20px	
+			line-height: 20px
+			color: $blue
+			font-weight: 500
+
 	
 .primary-nav
 	margin: auto 0
@@ -22,7 +52,7 @@
 		li
 			display: inline-block
 			list-style-type: none
-			margin-left: 25px
+			margin-left: 6px
 			&:first-child
 				margin-left: 0
 		a
@@ -30,9 +60,21 @@
 			color: $blackText
 			font-weight: 400
 			font-size: 16px
-			font-family: 'Montserrat', sans-serif
+			font-family: 'Raleway', sans-serif
 			transition: 0.25s ease-out
 			&:hover 
-				color: $greenText
+				color: $accentText
 
+.prymary-socials
+	ul
+		li
+			display: inline-block
+			list-style-type: none
+			margin-left: 10px
+			&:first-child
+				margin-left: 0
+
+
+
+			
 

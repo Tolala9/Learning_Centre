@@ -10,34 +10,42 @@
 	vertical-align: middle
 	user-select: none
 	transition: 250ms all ease-in-out
-	font-size: 12px
-	border: none
+	font-size: 16px
+	font-weight: 700
+	border: 2px solid transparent
 	letter-spacing: 0.05em
 	padding: 9px 15px
-	text-transform: uppercase
+	// text-transform: uppercase
 	min-width: 180px
 	min-height: 51px
+	i
+		margin-left: 8px
+		transition: 250ms all ease-in-out
 	&-normal
 		margin-top: 0
-		margin-left: 7px
-		color: $blackText
-		background-color: $greyButton
+		margin-left: 30px
+		color: $blueText
+		background-color: $white
+		border: 2px solid $blue
 		&:hover
 			color: $whiteText
-			background-color: $blackText
+			background-color: $blue
+			i
+				color: $accent
 	&-block
 		display: flex
 		width: 100%
 
 	&-primary
 		color: #fff
-		background-color: #00BB6D
+		background-color: $accent
 		&:focus, &:active
 			color: #fff
-			background-color: #00BB6D
+			background-color: $blue
 		&:hover
 			color: #fff
-			background-color: #2f353e
+			background-color: $blue
+			border: 2px solid $blue
 	
 * + .button
   margin-top: 30px
@@ -59,7 +67,7 @@
     left: -1px
     width: calc(100% + 2px)
     height: calc(100% + 2px)
-    background: #00BB6D
+    background: $blue
     z-index: -1
     opacity: 0
     transform: scale3d(0.7, 1, 1)
@@ -80,13 +88,14 @@
   &.button-circle:before
     border-radius: 30px
   &.button-social::before, &.button-primary::before
-    background: #2f353e
+    background: $blue
+
   &.button-gray-drago-dark:before
-    background-color: #00BB6D
+    background-color: $blue
   &.button-normal-outline:before
-    background: #151515#2f353e
+    background: $blue
 
 
 @media only screen and (min-width: 480px)
 	.button 
-			padding: 9px 30px
+			padding: 13px 30px

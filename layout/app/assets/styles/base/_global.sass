@@ -1,8 +1,8 @@
 * 
 	box-sizing: border-box
 
-body
-	font-family: "Roboto", Helvetica, Arial, sans-serif
+body 
+	font-family: "Raleway", sans-serif
 	font-weight: 400
 	font-size: 14px
 	line-height: 1.71429
@@ -12,18 +12,22 @@ body
 	margin: 0
 
 .font-sec
-	font-family: "Montserrat", sans-serif
+	font-family: "Fira Sans", sans-serif
 .big
 	font-size: 16px
 
+.font-medium
+	font-weight: 500
+.font-semibold
+	font-weight: 600
 
 h1, h2, h3, h4, h5, h6, [class*='heading-']
 	margin-top: 0
 	margin-bottom: 0
-	font-family: "Montserrat", sans-serif
+	font-family: "Raleway", sans-serif
 	font-weight: 400
 	letter-spacing: 0.05em
-	color: #151515
+	color: $blackText
 h1
 	font-size: 38px
 	line-height: 1.2
@@ -95,6 +99,8 @@ h6 a
 		margin-top: 25px
 
 
+
+
 ul, ol
 	display: block
 	list-style: none;
@@ -114,6 +120,14 @@ i
 
 p
 	margin: 0
+	font-family: "Fira Sans", sans-serif
+	font-size: 16px
+
+* + p
+	margin-top: 50px
+
+.add-title + p 
+	margin-top: 30px
 
 img
 	display: inline-block
@@ -161,6 +175,16 @@ img
 	height: 100px
 	&-xs
 		height: 40px
+
+.divider-title
+	width: 120px
+	height: 1px
+	border-top: 3px solid $blue
+	margin-top: 15px
+	margin-bottom: 15px
+
+.divider-title + *
+	padding-top: 15px
 
 .page 
 	position: relative
