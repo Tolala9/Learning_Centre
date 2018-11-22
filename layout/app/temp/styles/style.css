@@ -183,11 +183,18 @@ p {
 .add-title + p {
   margin-top: 30px; }
 
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
 .img-responsive {
   display: inline-block;
   max-width: 100%;
   height: auto;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin: auto; }
 
 .img-section {
   width: auto;
@@ -198,6 +205,10 @@ p {
           border-radius: 50%; }
 
 .img-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   overflow: hidden; }
 
@@ -2963,7 +2974,7 @@ ul, ol {
   -webkit-transform: translateY(100px);
       -ms-transform: translateY(100px);
           transform: translateY(100px);
-  opacity: 0.6; }
+  opacity: 0.8; }
   .ui-to-top:hover {
     opacity: 1;
     background: #0D2D62;
