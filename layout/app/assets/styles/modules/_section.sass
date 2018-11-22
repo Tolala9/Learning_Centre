@@ -44,8 +44,12 @@
 .section
 	&--white
 		background-color: white
-	&--gray
-		// background-color: $secGray
+	&--blue
+		background-color: $blue
+		h1, h2, h3, h4, p
+			color: $whiteText
+		.divider-title
+			border-color: $white
 
 
 
@@ -58,3 +62,20 @@
 	.section__after-swiper-modern
 		padding-top: 0
 		margin-top: -63px
+
+.section--with-img
+	padding-top: 0
+	padding-bottom: 0
+
+.section-lg
+	.section-content-wrap
+		padding-top: 90px
+		padding-bottom: 90px
+		padding-left: 8%
+
+@media (min-width: 1470px)
+	.section-lg
+		.section-content-wrap
+			padding-top: 110px
+			padding-bottom: 110px
+			padding-left: 8%

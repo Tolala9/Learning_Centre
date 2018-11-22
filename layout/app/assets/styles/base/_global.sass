@@ -30,12 +30,12 @@ h1, h2, h3, h4, h5, h6, [class*='heading-']
 	color: $blackText
 
 h1, .heading-1
-	font-size: 38px
+	font-size: 36px
 	line-height: 1.2
 
 @media (min-width: 1470px)
 	h1, .heading-1
-		font-size: 46px
+		font-size: 42px
 
 h2, .heading-2
 	font-size: 32px
@@ -61,12 +61,12 @@ h2 * + .heading-main-text, .heading-2 * + .heading-main-text
 		margin-top: 19px
 
 h3, .heading-3
-	font-size: 24px
+	font-size: 26px
 	line-height: 1.2
 
 @media (min-width: 1470px)
 	h3, .heading-3
-		font-size: 36px
+		font-size: 30px
 
 h4, .heading-4
 	font-size: 22px
@@ -182,15 +182,29 @@ p
 
 
 
-img
+// img
+// 	display: inline-block
+// 	max-width: 100%
+// 	height: auto
+// 	vertical-align: middle
+.img-responsive
 	display: inline-block
 	max-width: 100%
 	height: auto
+	vertical-align: middle
+.img-section
+	width: auto
+	// max-height: 1020px 
 	vertical-align: middle
 .img-circle
 	border-radius: 50%
 .img-wrapper
 	text-align: center
+	// height: 100%
+	// width: 100%
+	overflow: hidden
+
+
 
 
 *
@@ -239,7 +253,7 @@ img
 	margin-top: 15px
 	margin-bottom: 15px
 
-.divider-title + *
+.divider-title + .add-title
 	padding-top: 15px
 
 
