@@ -28,18 +28,71 @@ h1, h2, h3, h4, h5, h6, [class*='heading-']
 	font-weight: 400
 	letter-spacing: 0.05em
 	color: $blackText
-h1
+
+h1, .heading-1
 	font-size: 38px
 	line-height: 1.2
-h2
+
+@media (min-width: 1470px)
+	h1, .heading-1
+		font-size: 46px
+
+h2, .heading-2
 	font-size: 32px
 	line-height: 1.2
-h3
+
+@media (min-width: 1470px)
+	h2, .heading-2
+		font-size: 42px
+
+h2 .heading-4, .heading-2 .heading-4
+	display: block
+	font-weight: 400
+	line-height: 1.2
+
+h2 .heading-main-text, .heading-2 .heading-main-text
+	display: inline-block
+
+h2 * + .heading-main-text, .heading-2 * + .heading-main-text
+	margin-top: 5px
+
+@media (min-width: 1200px)
+	h2 * + .heading-main-text, .heading-2 * + .heading-main-text
+		margin-top: 19px
+
+h3, .heading-3
 	font-size: 24px
 	line-height: 1.2
+
+@media (min-width: 1470px)
+	h3, .heading-3
+		font-size: 36px
+
 h4, .heading-4
-	font-size: 20px
+	font-size: 22px
 	line-height: 1.2
+
+@media (min-width: 1470px)
+	h4, .heading-4
+		font-size: 26px
+@media (min-width: 1200px)
+	.heading-4 + h1
+		margin-top: 25px
+
+h5, .heading-5
+	line-height: 1.441
+	font-size: 18px
+
+h6, .heading-6
+	line-height: 1.2
+	font-size: 15px
+
+.big
+	font-size: 16px
+
+.large
+	font-size: 18px
+
 * + h4
 	margin-top: 15px
 i + h4
@@ -48,12 +101,7 @@ i + h4
 		margin-top: 8px
 	a:hover
 		color: $greenText
-h5, .heading-5
-	font-size: 18px
-	line-height: 1.441
-h6
-	font-size: 15px
-	line-height: 1.2
+
 hr 
 	margin-top: 0
 	margin-bottom: 0
@@ -94,9 +142,8 @@ h6 a
 	&:focus, &:active
 		color: inherit
 
-@media (min-width: 1200px)
-	.heading-4 + h1
-		margin-top: 25px
+
+
 
 
 
@@ -123,11 +170,17 @@ p
 	font-family: "Fira Sans", sans-serif
 	font-size: 16px
 
+@media (min-width: 1470px)
+	p
+		font-size: 18px
+
 * + p
 	margin-top: 50px
 
 .add-title + p 
 	margin-top: 30px
+
+
 
 img
 	display: inline-block
