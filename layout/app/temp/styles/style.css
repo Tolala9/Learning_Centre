@@ -504,6 +504,13 @@ label {
 .section--white {
   background-color: white; }
 
+.section--light-blue {
+  background-color: #74B3CE; }
+  .section--light-blue h1, .section--light-blue h2, .section--light-blue h3, .section--light-blue h4, .section--light-blue p {
+    color: #FFFFFF; }
+  .section--light-blue .divider-title {
+    border-color: #FFFFFF; }
+
 .section--blue {
   background-color: #0D2D62; }
   .section--blue h1, .section--blue h2, .section--blue h3, .section--blue h4, .section--blue p {
@@ -1144,6 +1151,9 @@ html.lt-ie-10 .range-narrow > [class*='cell'], .range-narrow > [class*='cell'], 
   .range > .cell-lg-preffix-0 {
     margin-left: 0;
     padding-left: 0; }
+  .range > .cell-lg-postfix-0 {
+    margin-right: 0;
+    padding-right: 0; }
   .range > .cell-lg-1 {
     -webkit-flex-basis: 10%;
     -ms-flex-preferred-size: 10%;
