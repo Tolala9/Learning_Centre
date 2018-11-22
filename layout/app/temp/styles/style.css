@@ -2888,16 +2888,17 @@ ul, ol {
     font-size: 15px; } }
 
 .ui-to-top {
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  line-height: 46px;
-  color: #FFF;
-  background: #00BB6D;
+  width: 60px;
+  height: 60px;
+  font-size: 48px;
+  line-height: 1;
+  color: #FFFFFF;
+  background: #0D2D62;
   -webkit-border-radius: 50%;
           border-radius: 50%;
+  border: 1px solid #FFFFFF;
   position: fixed;
-  right: 15px;
+  right: 80px;
   bottom: 15px;
   overflow: hidden;
   text-align: center;
@@ -2908,11 +2909,14 @@ ul, ol {
   transition: .45s all ease-in-out;
   -webkit-transform: translateY(100px);
       -ms-transform: translateY(100px);
-          transform: translateY(100px); }
+          transform: translateY(100px);
+  opacity: 0.6; }
   .ui-to-top:hover {
-    color: #fff;
-    background: #00884f;
+    opacity: 1;
+    background: #0D2D62;
     text-decoration: none; }
+    .ui-to-top:hover i {
+      color: #FE9920; }
   .ui-to-top:focus {
     color: #fff; }
   .ui-to-top.active {
@@ -2920,8 +2924,7 @@ ul, ol {
         -ms-transform: translateY(-15px);
             transform: translateY(-15px); }
   .ui-to-top i {
-    font-size: 26px;
-    margin-top: 11px; }
+    font-size: 30px; }
 
 html.mobile .ui-to-top, html.tablet .ui-to-top {
   display: none !important; }
@@ -2930,6 +2933,21 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
   .ui-to-top {
     right: 40px;
     bottom: 40px; } }
+
+@media (min-width: 1470px) {
+  .ui-to-top {
+    right: 80px;
+    bottom: 80px;
+    -webkit-transform: translateY(160px);
+        -ms-transform: translateY(160px);
+            transform: translateY(160px);
+    width: 80px;
+    height: 80px; }
+    .ui-to-top i {
+      font-size: 40px;
+      -webkit-transform: translateY(12px);
+          -ms-transform: translateY(12px);
+              transform: translateY(12px); } }
 
 #toTop {
   display: none;

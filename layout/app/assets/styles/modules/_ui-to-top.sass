@@ -1,13 +1,14 @@
 .ui-to-top
-	width: 50px
-	height: 50px
-	font-size: 24px
-	line-height: 46px
-	color: #FFF
-	background: #00BB6D
+	width: 60px
+	height: 60px
+	font-size: 48px
+	line-height: 1
+	color: $white
+	background: $blue
 	border-radius: 50%
+	border: 1px solid $white
 	position: fixed
-	right: 15px
+	right: 80px
 	bottom: 15px
 	overflow: hidden
 	text-align: center
@@ -15,17 +16,19 @@
 	z-index: 20
 	transition: .45s all ease-in-out
 	transform: translateY(100px)
+	opacity: 0.6
 	&:hover
-		color: #fff
-		background: #00884f
+		opacity: 1
+		background: $blue
 		text-decoration: none
+		i
+			color: $accent
 	&:focus
 		color: #fff
 	&.active
 		transform: translateY(-15px)
 	i
-		font-size: 26px
-		margin-top: 11px
+		font-size: 30px
 
 html
 	&.mobile .ui-to-top, &.tablet .ui-to-top
@@ -35,6 +38,19 @@ html
 	.ui-to-top
 		right: 40px
 		bottom: 40px
+
+@media (min-width: 1470px)
+	.ui-to-top
+		right: 80px
+		bottom: 80px
+		transform: translateY(160px)
+		width: 80px
+		height: 80px
+		i
+			font-size: 40px
+			transform: translateY(12px)
+		
+	
 
 
 #toTop
