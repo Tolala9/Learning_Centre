@@ -193,6 +193,9 @@ img {
   -webkit-border-radius: 50%;
           border-radius: 50%; }
 
+.img-wrapper {
+  text-align: center; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -484,15 +487,17 @@ label {
     padding-top: 140px;
     padding-bottom: 140px; } }
 
+@media (min-width: 1470px) {
+  .section-lg {
+    padding-top: 110px;
+    padding-bottom: 110px; } }
+
 .section-relative {
   position: relative;
   z-index: 1; }
 
 .section--white {
   background-color: white; }
-
-.section--gray {
-  background-color: #3c444f; }
 
 .section__after-swiper-modern {
   position: relative;
@@ -2113,7 +2118,6 @@ html.lt-ie-10 .range > [class*="cell-xs-preffix-"], html.lt-ie-10 .range > [clas
     transition: 250ms all ease-in-out; }
   .button-normal {
     margin-top: 0;
-    margin-left: 30px;
     color: #0D2D62;
     background-color: #FFFFFF;
     border: 2px solid #0D2D62; }
@@ -2138,6 +2142,9 @@ html.lt-ie-10 .range > [class*="cell-xs-preffix-"], html.lt-ie-10 .range > [clas
       color: #fff;
       background-color: #0D2D62;
       border: 2px solid #0D2D62; }
+
+.button-primary + .button-normal {
+  margin-left: 30px; }
 
 * + .button {
   margin-top: 30px; }
@@ -3644,3 +3651,28 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
 
 .work-info dd {
   text-align: right; }
+
+/*Flex Grid system*/
+.shell {
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.shell {
+  max-width: 1190px;
+  padding-left: 0;
+  padding-right: 0; }
+
+@media (min-width: 1470px) {
+  .shell {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1500px; } }
+
+@media (min-width: 1470px) {
+  .shell {
+    padding-left: 0;
+    padding-right: 0; } }

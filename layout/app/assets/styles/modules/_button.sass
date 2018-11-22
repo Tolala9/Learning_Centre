@@ -23,7 +23,6 @@
 		transition: 250ms all ease-in-out
 	&-normal
 		margin-top: 0
-		margin-left: 30px
 		color: $blueText
 		background-color: $white
 		border: 2px solid $blue
@@ -46,6 +45,9 @@
 			color: #fff
 			background-color: $blue
 			border: 2px solid $blue
+
+.button-primary + .button-normal
+  margin-left: 30px
 	
 * + .button
   margin-top: 30px
