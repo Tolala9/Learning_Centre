@@ -38,12 +38,12 @@ h1, .heading-1
 		font-size: 42px
 
 h2, .heading-2
-	font-size: 32px
+	font-size: 36px
 	line-height: 1.2
 
 @media (min-width: 1470px)
 	h2, .heading-2
-		font-size: 42px
+		font-size: 44px
 
 h2 .heading-4, .heading-2 .heading-4
 	display: block
@@ -180,6 +180,10 @@ p
 .add-title + p 
 	margin-top: 30px
 
+p 
+	span 
+		.accent
+			color: $accentText
 
 
 img
@@ -201,6 +205,10 @@ img
 	text-align: center
 	overflow: hidden
 
+
+.tittle-wrapper
+	text-align: center
+	
 
 
 
@@ -249,6 +257,9 @@ img
 	border-top: 3px solid $blue
 	margin-top: 15px
 	margin-bottom: 15px
+	&--centered
+		display: flex
+		margin: 15px auto
 
 .divider-title + .add-title
 	padding-top: 15px
