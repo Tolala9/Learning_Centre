@@ -1,0 +1,88 @@
+.page-contacts
+	&__logo
+		flex: 1
+		display: flex
+	&__logo-text
+		display: inline-block	
+		margin: auto 10px
+		text-align: center
+		.first-text
+			font-size: 16px	
+			line-height: 1
+			margin-bottom: 15px
+		.sec-text
+			font-size: 20px	
+			line-height: 1
+			color: $blue
+			font-weight: 500
+
+@media (min-width: 1470px)
+	.page-contacts
+		&__logo-text
+			.first-text
+				font-size: 18px
+			.sec-text
+				font-size: 22px
+
+
+.page-contacts
+	&__data
+		ul
+			li
+				font-family: "Fira Sans", sans-serif
+				font-size: 16px
+				margin-bottom: 10px
+				border-bottom: 1px solid $grey
+				&:last-child
+					border: none
+				span
+					font-size: 18px
+					color: $blueText
+					font-family: "Raleway", sans-serif
+					padding-right: 20px
+
+@media (min-width: 1470px)
+	.page-contacts
+		&__data
+			ul
+				li
+					font-size: 18px
+					margin-bottom: 10px
+					span
+						font-size: 20px
+						padding-right: 20px
+
+
+
+.page-contacts
+	&__social
+		display: flex
+		flex-direction: column
+		height: 100%
+		justify-content: center
+		ul
+			li
+				padding-bottom: 20px
+				list-style-type: none
+				a
+					color: $greyText
+					font-size: 20px
+					.contacts-socials-frame
+						display: flex
+						margin: auto 
+						width: 40px
+						height: 40px
+						line-height: 1
+						border: 1px solid $black
+						border-radius: 13px
+						transition: 0.25s ease-out
+						i
+							margin: auto
+							transition: 0.25s ease-out
+						&:hover, &:focus
+							background-color: $blue
+							i
+								color: $white
+
+	
+
