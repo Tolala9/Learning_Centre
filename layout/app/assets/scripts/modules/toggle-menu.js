@@ -21,9 +21,11 @@ class ToggleMenu{
         if ($(".top-mnu").is(":visible")) {
           $(".top-mnu").fadeOut(600);
           $(".top-mnu li a").removeClass("fadeInUp animated");
+           $('body').removeClass('stop-scrolling');
         } else {
           $(".top-mnu").fadeIn(600);
           $(".top-mnu li a").addClass("fadeInUp animated");
+
         };
       }); 
 

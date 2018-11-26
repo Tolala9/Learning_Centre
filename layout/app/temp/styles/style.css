@@ -43,6 +43,10 @@ h1, .heading-1 {
   h1, .heading-1 {
     font-size: 42px; } }
 
+@media (max-width: 480px) {
+  h1, .heading-1 {
+    font-size: 27px; } }
+
 h2, .heading-2 {
   font-size: 36px;
   line-height: 1.2; }
@@ -85,6 +89,10 @@ h4, .heading-4 {
 @media (min-width: 1200px) {
   .heading-4 + h1 {
     margin-top: 25px; } }
+
+@media (max-width: 480px) {
+  h4, .heading-4 {
+    font-size: 16px; } }
 
 h5, .heading-5 {
   line-height: 1.441;
@@ -179,6 +187,10 @@ p {
 @media (min-width: 1470px) {
   p {
     font-size: 18px; } }
+
+@media (max-width: 480px) {
+  p {
+    font-size: 14px; } }
 
 * + p {
   margin-top: 50px; }
@@ -2239,6 +2251,10 @@ html.lt-ie-10 .range > [class*="cell-xs-preffix-"], html.lt-ie-10 .range > [clas
 .button-primary + .button-normal {
   margin-left: 30px; }
 
+@media (max-width: 560px) {
+  .button-primary + .button-normal {
+    margin-left: 0px; } }
+
 * + .button {
   margin-top: 30px; }
 
@@ -2674,7 +2690,8 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(255, 255, 255, 0.6); } }
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: -10; } }
 
 .swiper-high-tech .swiper-container {
   min-height: 450px;
@@ -3117,15 +3134,21 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
   .swiper-slide-caption p {
     display: none; }
 
-@media (min-width: 768px) {
+@media (min-width: 520px) {
   .swiper-slide-caption p {
+    display: block; } }
+
+@media (min-width: 360px) {
+  .swiper-slide-caption .add-title {
+    margin-top: 15px;
     display: block; } }
 
 .swiper-modern p {
   max-width: 640px; }
 
 .swiper-modern h1 {
-  margin-top: 80px; }
+  margin-top: 80px;
+  z-index: 10; }
 
 .swiper-modern .heading-4 {
   font-family: "Fira Sans", sans-serif;
@@ -3137,6 +3160,14 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
     max-width: 800px; }
   .swiper-modern h1 {
     margin-top: 60px; } }
+
+@media (max-width: 760px) {
+  .swiper-modern {
+    text-align: center; }
+    .swiper-modern .divider-title {
+      display: none; }
+    .swiper-modern h1 {
+      margin-top: 0px; } }
 
 .mapouter {
   text-align: right;
