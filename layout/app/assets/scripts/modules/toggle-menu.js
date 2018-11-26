@@ -32,6 +32,7 @@ class ToggleMenu{
       $(".top-mnu li a").click(function() {
         $(".top-mnu").fadeOut(600);
         $(".sandwich").toggleClass("active");
+        $('body').removeClass('stop-scrolling');
       }).append("<span>");
 
     }());
