@@ -82,15 +82,20 @@ var _swiper = __webpack_require__(3);
 
 var _swiper2 = _interopRequireDefault(_swiper);
 
+var _toggleMenu = __webpack_require__(4);
+
+var _toggleMenu2 = _interopRequireDefault(_toggleMenu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Instantiate a new object using our modules/classes
-var copyrightYear = new _copyrightYear2.default(); // 3rd party packages from NPM
+// 3rd party packages from NPM
 
 // Our modules / classes
-
+var copyrightYear = new _copyrightYear2.default();
 var uitotop = new _uiToTop2.default();
 var swiper = new _swiper2.default();
+var toggleMenu = new _toggleMenu2.default();
 
 /***/ }),
 /* 1 */
@@ -461,6 +466,62 @@ var Swiper = function () {
 }();
 
 exports.default = Swiper;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ToggleMenu = function () {
+  function ToggleMenu() {
+    _classCallCheck(this, ToggleMenu);
+
+    this.allMethods();
+  }
+
+  _createClass(ToggleMenu, [{
+    key: "allMethods",
+    value: function allMethods() {
+
+      (function () {
+
+        $(".toggle-mnu, .menu_item").click(function () {
+          $(".sandwich").toggleClass("active");
+          $('body').addClass('stop-scrolling');
+        });
+
+        $(".toggle-mnu").click(function () {
+          if ($(".top-mnu").is(":visible")) {
+            $(".top-mnu").fadeOut(600);
+            $(".top-mnu li a").removeClass("fadeInUp animated");
+          } else {
+            $(".top-mnu").fadeIn(600);
+            $(".top-mnu li a").addClass("fadeInUp animated");
+          };
+        });
+
+        $(".top-mnu li a").click(function () {
+          $(".top-mnu").fadeOut(600);
+          $(".sandwich").toggleClass("active");
+        }).append("<span>");
+      })();
+    }
+  }]);
+
+  return ToggleMenu;
+}();
+
+exports.default = ToggleMenu;
 
 /***/ })
 /******/ ]);

@@ -7,7 +7,7 @@
 	&__menu-content
 		display: flex
 		flex: 1
-	&__social
+	&__social 
 		display: flex
 		margin: auto
 		a
@@ -61,6 +61,15 @@
 			.sec-text
 				font-size: 24px
 
+@media (max-width: 480px)
+	.page-header
+		padding: 15px 20px
+		&__logo-text
+			margin: auto 40px auto 5px
+			.first-text
+				font-size: 14px
+			.sec-text
+				font-size: 16px
 
 
 .primary-nav
@@ -87,6 +96,12 @@
 		ul
 			a
 				font-size: 18px
+
+@media (max-width: 1200px)
+	.page-header__menu-content
+		display: none
+	.page-header__social
+		display: none
 
 .prymary-socials
 	ul
