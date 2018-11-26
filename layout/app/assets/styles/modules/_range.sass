@@ -107,6 +107,8 @@
 	padding-left: 15px
 	padding-right: 15px
 
+
+
 html.lt-ie-10 * + .range, * + .range
 	margin-top: 20px
 
@@ -315,6 +317,13 @@ html.lt-ie-10 .range-narrow > [class*='cell'], .range-narrow > [class*='cell'], 
 		-ms-flex-preferred-size: 25%
 		flex-basis: 25%
 		max-width: 25%
+@media (min-width: 320px) 
+	.range > 
+		.cell-xs-full-width
+			margin-left: 0
+			padding-left: 0
+			margin-right: 0
+			padding-right: 0
 
 @media (min-width: 480px) and (min-width: 768px)
 	.range >

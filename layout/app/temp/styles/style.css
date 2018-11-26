@@ -74,6 +74,10 @@ h3, .heading-3 {
   font-size: 26px;
   line-height: 1.2; }
 
+@media (max-width: 480px) {
+  h3, .heading-3 {
+    font-size: 16px; } }
+
 @media (min-width: 1470px) {
   h3, .heading-3 {
     font-size: 30px; } }
@@ -226,8 +230,19 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden; }
+
+@media (max-width: 1200px) {
+  .img-section {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: auto; } }
 
 .tittle-wrapper {
   text-align: center; }
@@ -604,6 +619,12 @@ label {
   padding-bottom: 90px;
   padding-left: 8%; }
 
+@media (max-width: 480px) {
+  .section-lg .section-content-wrap {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 0; } }
+
 @media (min-width: 1470px) {
   .section-lg .section-content-wrap {
     padding-top: 110px;
@@ -953,6 +974,13 @@ html.lt-ie-10 .range-narrow > [class*='cell'], .range-narrow > [class*='cell'], 
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%; } }
+
+@media (min-width: 320px) {
+  .range > .cell-xs-full-width {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0; } }
 
 @media (min-width: 480px) and (min-width: 768px) {
   .range > .cell-sm-25 {
@@ -2405,7 +2433,7 @@ html.lt-ie-10 .range > [class*="cell-xs-preffix-"], html.lt-ie-10 .range > [clas
         -ms-flex-align: center;
             align-items: center;
     font-weight: 400; }
-  .thumb-default-img {
+  .thumb-default picture-img {
     width: 140px;
     height: 110px; }
 
@@ -2415,6 +2443,11 @@ html.lt-ie-10 .range > [class*="cell-xs-preffix-"], html.lt-ie-10 .range > [clas
   .thumb-default-img {
     width: 150px;
     height: 120px; } }
+
+@media (max-width: 480px) {
+  .thumb-default-img {
+    width: 85px;
+    height: 85px; } }
 
 * + .thumb-default {
   margin-top: 60px; }
@@ -2454,6 +2487,14 @@ html.lt-ie-10 .range > [class*="cell-xs-preffix-"], html.lt-ie-10 .range > [clas
   .thumb-icon p span {
     color: #FE9920;
     text-transform: uppercase; }
+
+@media (max-width: 1200px) {
+  .thumb-icon {
+    margin-top: 60px; } }
+
+@media (max-width: 480px) {
+  .thumb-icon {
+    margin-top: 30px; } }
 
 .thumb-icon-img__wrapper {
   display: -webkit-box;
