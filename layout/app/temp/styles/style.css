@@ -237,6 +237,10 @@ img {
   overflow: hidden; }
 
 @media (max-width: 1200px) {
+  .cell-lg-3 .img-wrapper {
+    margin-top: 30px; } }
+
+@media (max-width: 1200px) {
   .img-section {
     display: inline-block;
     max-width: 100%;
@@ -404,7 +408,8 @@ label {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px 40px; }
+  padding: 15px 40px;
+  border-bottom: 1px solid #DADDD8; }
   .page-header__logo {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -3551,3 +3556,30 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
                 color: #FFFFFF; }
 
 /* =====END TOGGLE MENU===== */
+.quote {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 50px;
+  padding-right: 20px;
+  margin-top: 60px; }
+  .quote__text {
+    margin: 50px auto 50px auto; }
+  .quote--grey {
+    background-color: #DADDD8; }
+  .quote:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    bottom: 20px;
+    width: 4px;
+    border-left: 9px solid #FE9920; }
+
+@media (max-width: 480px) {
+  .quote {
+    margin-top: 30px; }
+    .quote__text {
+      margin: 30px auto 30px auto; } }

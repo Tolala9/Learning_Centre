@@ -1,0 +1,25 @@
+.quote
+	position: relative
+	display: flex
+	padding-left: 50px
+	padding-right: 20px
+	margin-top: 60px
+	&__text
+		margin: 50px auto 50px auto
+		
+	&--grey
+		background-color: $grey 
+	&:before
+		content: ''
+		position: absolute
+		left: 20px
+		top: 20px
+		bottom: 20px
+		width: 4px
+		border-left: 9px solid $accent
+
+@media (max-width: 480px)
+	.quote
+		margin-top: 30px
+		&__text
+			margin: 30px auto 30px auto
