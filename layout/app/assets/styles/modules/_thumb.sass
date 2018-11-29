@@ -32,6 +32,7 @@
 	.thumb-default-img
 		width: 85px
 		height: 85px
+
 * + .thumb-default
 	margin-top: 60px
 
@@ -41,7 +42,53 @@
 	margin-top: 60px
 
 
+///
+.thumb-default__icon
+	max-width: 604px
+	background-color: $white
+	h3
+		color: $blueText
 
+	&-title
+		position: relative
+		display: flex
+		padding-left: 30px
+		padding-right: 20px
+		align-items: center
+		font-weight: 400	
+	&-img
+		width: 64px
+		height: 64px
+		margin: auto
+.thumb-default__icon__wrapper
+	display: flex
+	min-width: 100px
+	min-height: 100px
+	height: auto
+	background-color: $accent
+.thumb-default__icon:first-child
+	margin-top: 30px
+@media (min-width: 1470px)
+	.thumb-default
+		max-width: 782px
+	.thumb-default__icon__wrapper
+		min-width: 110px
+		min-height: 110px
+		height: auto
+
+@media (max-width: 480px)
+	.thumb-default__icon
+		h3
+			font-weight: 600
+	.thumb-default__icon__wrapper
+		min-width: 85px
+		min-height: 85px
+		height: auto
+	.thumb-default__icon + .thumb-default__icon
+		margin-top: 20px
+
+
+//////
 .thumb-icon
 	max-width: 100%
 	display: flex
