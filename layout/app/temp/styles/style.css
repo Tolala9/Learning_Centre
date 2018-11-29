@@ -396,6 +396,9 @@ label {
     padding: 12px 15px;
     font-size: 15px; } }
 
+a .active {
+  color: #FE9920; }
+
 .wrapper {
   overflow: hidden;
   padding-left: 15px;
@@ -517,6 +520,8 @@ label {
     transition: 0.25s ease-out; }
     .primary-nav ul a:hover {
       color: #FE9920; }
+  .primary-nav ul .active {
+    color: #FE9920; }
 
 @media (min-width: 1470px) {
   .primary-nav ul a {
@@ -3583,3 +3588,91 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
     margin-top: 30px; }
     .quote__text {
       margin: 30px auto 30px auto; } }
+
+.page-title {
+  min-height: 320px;
+  max-height: 653px; }
+  .page-title-img {
+    -webkit-background-size: cover;
+            background-size: cover; }
+
+@media (min-width: 768px) {
+  .page-title .page-title-img-caption {
+    padding-left: 5%; } }
+
+@media (max-width: 1200px) {
+  .page-title .page-title-img-caption {
+    position: relative;
+    top: -60px;
+    padding-top: 90px;
+    min-height: 320px;
+    max-height: 500px; }
+    .page-title .page-title-img-caption p {
+      padding-right: 0; } }
+
+@media (min-width: 1200px) {
+  .page-title .page-title-img-caption {
+    position: relative;
+    top: -200px;
+    padding-top: 90px;
+    padding-left: 5%;
+    min-height: 320px;
+    max-height: 400px; } }
+
+@media (min-width: 1600px) {
+  .page-title .page-title-img-caption {
+    position: relative;
+    top: -180px;
+    padding-top: 110px;
+    padding-left: 0;
+    padding-left: 4%;
+    min-height: 320px;
+    max-height: 500px; } }
+
+.page-header + .page-title {
+  margin-top: 0; }
+
+@media (max-width: 1199px) {
+  .page-title .page-title-img {
+    position: relative; }
+    .page-title .page-title-img:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: -10; } }
+
+.page-title-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
+.page-title-img-caption p {
+  padding-right: 40%; }
+
+.page-title h1 {
+  margin-top: 80px;
+  z-index: 10; }
+
+@media (min-width: 1470px) {
+  .page-title h1 {
+    margin-top: 60px; } }
+
+@media (max-width: 760px) {
+  .page-title h1 {
+    margin-top: 0px; } }
