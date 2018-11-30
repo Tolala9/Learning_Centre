@@ -42,12 +42,13 @@
 	margin-top: 60px
 
 
-///
+///========================
 .thumb-default__icon
 	max-width: 604px
 	background-color: $white
 	h3
 		color: $blueText
+		font-size: 20px
 
 	&-title
 		position: relative
@@ -71,6 +72,9 @@
 @media (min-width: 1470px)
 	.thumb-default
 		max-width: 782px
+	.thumb-default__icon
+		h3
+			font-size: 24px
 	.thumb-default__icon__wrapper
 		min-width: 110px
 		min-height: 110px
@@ -79,7 +83,7 @@
 @media (max-width: 480px)
 	.thumb-default__icon
 		h3
-			font-weight: 600
+			// font-weight: 600
 	.thumb-default__icon__wrapper
 		min-width: 85px
 		min-height: 85px
@@ -88,7 +92,7 @@
 		margin-top: 20px
 
 
-//////
+//////============
 .thumb-icon
 	max-width: 100%
 	display: flex
