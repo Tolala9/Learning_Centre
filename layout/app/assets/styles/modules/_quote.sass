@@ -5,21 +5,36 @@
 	padding-right: 20px
 	margin-top: 60px
 	&__text
-		margin: 50px auto 50px auto
-		
+		margin: 40px auto 40px auto
+
+	&--accent
+		background-color: $accent
+		&:before
+			content: ''
+			position: absolute
+			left: 20px
+			top: 20px
+			bottom: 20px
+			width: 4px
+			border-left: 9px solid $blue
+
 	&--grey
 		background-color: $grey 
-	&:before
-		content: ''
-		position: absolute
-		left: 20px
-		top: 20px
-		bottom: 20px
-		width: 4px
-		border-left: 9px solid $accent
+		&:before
+			content: ''
+			position: absolute
+			left: 20px
+			top: 20px
+			bottom: 20px
+			width: 4px
+			border-left: 9px solid $accent
 
 @media (max-width: 480px)
 	.quote
 		margin-top: 30px
 		&__text
 			margin: 30px auto 30px auto
+
+@media (min-width: 1470px)
+	.quote
+		margin-top: 10px

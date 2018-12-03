@@ -310,6 +310,9 @@ img {
 .divider-title + .add-title {
   padding-top: 15px; }
 
+.divider-title + .list__default {
+  padding-top: 30px; }
+
 .page {
   position: relative;
   overflow: hidden;
@@ -551,6 +554,8 @@ a .active {
     width: 100%; }
   .section--white {
     background-color: #FFFFFF; }
+  .section--grey {
+    background-color: #DADDD8; }
   .section--dark-white {
     background-color: #f2f3f8; }
 
@@ -3636,23 +3641,37 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
   padding-right: 20px;
   margin-top: 60px; }
   .quote__text {
-    margin: 50px auto 50px auto; }
+    margin: 40px auto 40px auto; }
+  .quote--accent {
+    background-color: #FE9920; }
+    .quote--accent:before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      bottom: 20px;
+      width: 4px;
+      border-left: 9px solid #0D2D62; }
   .quote--grey {
     background-color: #DADDD8; }
-  .quote:before {
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    bottom: 20px;
-    width: 4px;
-    border-left: 9px solid #FE9920; }
+    .quote--grey:before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      bottom: 20px;
+      width: 4px;
+      border-left: 9px solid #FE9920; }
 
 @media (max-width: 480px) {
   .quote {
     margin-top: 30px; }
     .quote__text {
       margin: 30px auto 30px auto; } }
+
+@media (min-width: 1470px) {
+  .quote {
+    margin-top: 10px; } }
 
 .page-title {
   min-height: 320px;
@@ -3742,3 +3761,19 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
   .page-title h1 {
     margin-top: 0px;
     padding-right: 0; } }
+
+.list__default ul li {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px; }
+  .list__default ul li i {
+    color: #FE9920;
+    font-size: 26px;
+    padding-right: 10px; }
+
+@media (max-width: 480px) {
+  .list__default ul li {
+    font-size: 16px; }
+    .list__default ul li i {
+      color: #FE9920;
+      font-size: 18px;
+      padding-right: 5px; } }
