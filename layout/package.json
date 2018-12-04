@@ -32,6 +32,7 @@
     "gulp-usemin": "^0.3.29",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.5",
+    "vinyl-ftp": "^0.6.1",
     "webpack": "^3.8.1",
     "webpack-cli": "^3.1.2"
   }
