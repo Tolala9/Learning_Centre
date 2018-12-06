@@ -1,6 +1,7 @@
 package-lock.json/
 app/assets/images/old/
 **/gulp/tasks/deploy.js
+docs/**
 
 
 

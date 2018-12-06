@@ -1,4 +1,6 @@
-* 
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
 	box-sizing: border-box
 
 body 
@@ -11,10 +13,14 @@ body
 	background-color: #fff
 	margin: 0
 
+// **
+// ** Font
+// ** --------------------------------------------------
+.fas
+	font-family: "font-awesome-sol"
+
 .font-sec
 	font-family: "Fira Sans", sans-serif
-.big
-	font-size: 16px
 
 .font-medium
 	font-weight: 500
@@ -29,6 +35,9 @@ h1, h2, h3, h4, h5, h6, [class*='heading-']
 	letter-spacing: 0.05em
 	color: $blackText
 
+// **
+// ** H1
+// ** --------------------------------------------------
 h1, .heading-1
 	font-size: 36px
 	line-height: 1.2
@@ -40,14 +49,18 @@ h1, .heading-1
 	h1, .heading-1
 		font-size: 27px
 
+
+// **
+// ** H2
+// ** --------------------------------------------------
 h2, .heading-2
-	font-size: 36px
+	font-size: 30px
 	//30
 	line-height: 1.2
 
 @media (min-width: 1470px)
 	h2, .heading-2
-		font-size: 44px
+		font-size: 36px
 		// 36
 
 h2 .heading-4, .heading-2 .heading-4
@@ -65,6 +78,10 @@ h2 * + .heading-main-text, .heading-2 * + .heading-main-text
 	h2 * + .heading-main-text, .heading-2 * + .heading-main-text
 		margin-top: 19px
 
+
+// **
+// ** H3
+// ** --------------------------------------------------
 h3, .heading-3
 	font-size: 26px
 	line-height: 1.2
@@ -77,9 +94,21 @@ h3, .heading-3
 	h3, .heading-3
 		font-size: 30px
 
+// **
+// ** H4
+// ** --------------------------------------------------
 h4, .heading-4
 	font-size: 22px
 	line-height: 1.2
+
+* + h4
+	margin-top: 15px
+i + h4
+	margin-top: 10px
+	& + p
+		margin-top: 8px
+	a:hover
+		color: $greenText
 
 @media (min-width: 1470px)
 	h4, .heading-4
@@ -91,6 +120,9 @@ h4, .heading-4
 	h4, .heading-4
 		font-size: 16px
 
+// **
+// ** H5
+// ** --------------------------------------------------
 h5, .heading-5
 	line-height: 1.441
 	font-size: 18px
@@ -99,9 +131,13 @@ h5, .heading-5
 	h5, .heading-5
 		font-size: 22px
 
+// **
+// ** H6
+// ** --------------------------------------------------
 h6, .heading-6
 	line-height: 1.2
 	font-size: 15px
+
 
 .big
 	font-size: 16px
@@ -109,20 +145,10 @@ h6, .heading-6
 .large
 	font-size: 18px
 
-* + h4
-	margin-top: 15px
-i + h4
-	margin-top: 10px
-	& + p
-		margin-top: 8px
-	a:hover
-		color: $greenText
 
-hr 
-	margin-top: 0
-	margin-bottom: 0
-	border-top: 1px solid #90959e
-
+// **
+// ** a
+// ** --------------------------------------------------
 h1 a
 	color: inherit
 	&:focus, &:active
@@ -158,12 +184,9 @@ h6 a
 	&:focus, &:active
 		color: inherit
 
-
-
-
-
-
-
+// **
+// ** List
+// ** --------------------------------------------------
 ul, ol
 	display: block
 	list-style: none;
@@ -180,7 +203,9 @@ i
 	transition: 0.25s ease-out
 
 	
-
+// **
+// ** P
+// ** --------------------------------------------------
 p
 	margin: 0
 	font-family: "Fira Sans", sans-serif
@@ -202,7 +227,9 @@ p
 		margin-top: 15px
 
 
-
+// **
+// ** Img Img-wrapper
+// ** --------------------------------------------------
 img
 	user-select: none
 .img-responsive
@@ -213,25 +240,18 @@ img
 	margin: auto
 .img-section
 	width: auto
-	// max-height: 1052px 
 	vertical-align: middle
 .img-circle
 	border-radius: 50%
 .img-wrapper
 	display: flex
-	// display: block
-	// text-align: center
 	justify-content: center
 	overflow: hidden
-
-.justify-around
-	justify-content: flex-start
 
 @media (max-width: 1200px)
 	.cell-lg-3 .img-wrapper + 
 	.cell-lg-3 .img-wrapper
 		margin-top: 30px
-
 
 @media (max-width: 1200px)
 	.img-section
@@ -241,24 +261,24 @@ img
 		vertical-align: middle
 		margin: auto	
 
-
+// **
+// ** Position
+// ** --------------------------------------------------
+.justify-around
+	justify-content: flex-start
 .padding-l-30
 	padding-left: 30px
 .padding-t-30
 	padding-top: 30px
 
-.tittle-wrapper
-	text-align: center
-	
 
-
-
-*
-	-webkit-box-sizing: border-box
-	-moz-box-sizing: border-box
-	box-sizing: border-box
-.fas
-	font-family: "font-awesome-sol"
+// **
+// ** Divider
+// ** --------------------------------------------------
+hr 
+	margin-top: 0
+	margin-bottom: 0
+	border-top: 1px solid #90959e
 
 .divider 
 	line-height: 0
@@ -270,20 +290,6 @@ img
 		margin-top: 25px
 * + .divider-default
 	margin-top: 25px
-.divider-default + .list-lg 
-	margin-top: 35px
-
-.heading-divider-modern
-	position: relative
-	padding-left: 22px
-.heading-divider-modern:before
-	content: ''
-	position: absolute
-	left: 0
-	top: 0
-	bottom: 0
-	width: 4px
-	border-left: 4px solid #00BB6D
 
 .divider-section 
 	width: 100%
@@ -307,35 +313,6 @@ img
 
 .divider-title + .list__default
 	padding-top: 30px
-
-.page 
-	position: relative
-	overflow: hidden
-	min-height: 100vh !important
-
-
-.page > * 
-	width: 100%
-	margin-left: auto
-	margin-right: auto
-
-
-.page-header 
-	padding: 0
-	margin: 0
-	border-bottom: none
-
-
-.button:focus, .button:active, .button:active:focus 
-	outline: none
-
-.disp-flex
-	display: flex
-
-.stop-scrolling
-	height: 100%
-	overflow: hidden
-
 
  // **
  // ** Text Alignment
@@ -362,44 +339,26 @@ img
 			text-align: justify
 
 
+// **
+ // ** Addition
+ // ** --------------------------------------------------
 
+.button:focus, .button:active, .button:active:focus 
+	outline: none
+
+.disp-flex
+	display: flex
+
+.stop-scrolling
+	height: 100%
+	overflow: hidden
 
 label
 	display: inline-block
 	max-width: 100%
 	margin-bottom: 5px
 
-.snackbars
-	padding: 9px 16px
-	margin-left: auto
-	margin-right: auto
-	color: #fff
-	text-align: left
-	background-color: #151515
-	border-radius: 0
-	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15)
-	font-size: 14px
-	.icon-xxs
-		font-size: 18px
-	p span:last-child
-		padding-left: 14px
 
-.snackbars-left
-	display: inline-block
-	margin-bottom: 0
-
-.snackbars-right
-	display: inline-block
-	float: right
-	text-transform: uppercase
-	&:hover
-		text-decoration: underline
-
-@media (min-width: 480px)
-	.snackbars
-		max-width: 540px
-		padding: 12px 15px
-		font-size: 15px
 
 a
 	.active

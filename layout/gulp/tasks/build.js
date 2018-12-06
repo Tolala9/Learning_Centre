@@ -7,7 +7,7 @@ cssnano  = require('gulp-cssnano'),
 uglify   = require('gulp-uglify'),
 browserSync = require('browser-sync').create();
 
-gulp.task('previewDist', function() {
+gulp.task('preview', function() {
 	browserSync.init({
       server: {
         baseDir: "docs"
@@ -28,6 +28,10 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
 		'!./app/assets/img/**',
 		'!./app/assets/styles/**',
 		'!./app/assets/scripts/**',
+		'!./app/assets/fonts',
+		'!./app/assets/fonts/**',
+		'!./app/assets/libs',
+		'!./app/assets/libs/**',
 		'!./app/temp',
 		'!./app/temp/**'
 	]
