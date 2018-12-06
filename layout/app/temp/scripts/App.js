@@ -86,16 +86,21 @@ var _toggleMenu = __webpack_require__(4);
 
 var _toggleMenu2 = _interopRequireDefault(_toggleMenu);
 
+var _preloader = __webpack_require__(5);
+
+var _preloader2 = _interopRequireDefault(_preloader);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Instantiate a new object using our modules/classes
-// 3rd party packages from NPM
+var copyrightYear = new _copyrightYear2.default(); // 3rd party packages from NPM
 
-// Our modules / classes
-var copyrightYear = new _copyrightYear2.default();
+// Our modules / classes 
+
 var uitotop = new _uiToTop2.default();
 var swiper = new _swiper2.default();
 var toggleMenu = new _toggleMenu2.default();
+var preloader = new _preloader2.default();
 
 /***/ }),
 /* 1 */
@@ -524,6 +529,61 @@ var ToggleMenu = function () {
 }();
 
 exports.default = ToggleMenu;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Preloader = function () {
+  function Preloader() {
+    _classCallCheck(this, Preloader);
+
+    this.allMethods();
+  }
+
+  _createClass(Preloader, [{
+    key: 'allMethods',
+    value: function allMethods() {
+
+      (function () {
+
+        // $(window).on('load', function() {
+        //   $('.preloader').delay(100).fadeOut('slow');
+        //   $('body').removeClass('stop-scrolling');
+        // });
+
+        var $loading = $('.lds-wedges, .lds-css').delay(1000).fadeOut('slow');
+        // $('body').addClass('stop-scrolling');
+        $(document).ajaxStart(function () {
+          $loading.show();
+        }).ajaxStop(function () {
+          $loading.hide();
+        });
+
+        // $(document).ready(function($) {
+        //   var Body = $('body');
+        //   Body.addClass('preloader-site');
+        // });
+
+      })();
+    }
+  }]);
+
+  return Preloader;
+}();
+
+exports.default = Preloader;
 
 /***/ })
 /******/ ]);
