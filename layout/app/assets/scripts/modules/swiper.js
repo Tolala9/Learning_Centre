@@ -1,8 +1,8 @@
 class Swiper{
 
-	constructor() {
-		this.allMethods();  
-	}
+  constructor() {
+    this.allMethods();  
+  }
 
 
 
