@@ -3799,3 +3799,24 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
       -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
           transform: rotate(0deg); }
+
+.letter-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .letter-wrapper .letter {
+    max-width: 600px;
+    border: 5px solid #0D2D62;
+    padding: 20px;
+    background-color: #FCFBF4; }
+    .letter-wrapper .letter li {
+      margin-left: 10px; }
+
+@media (max-width: 1470px) {
+  .letter-wrapper .letter {
+    max-width: 500px; } }
