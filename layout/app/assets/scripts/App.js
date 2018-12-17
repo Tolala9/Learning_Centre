@@ -6,6 +6,7 @@ import UIToTop 				from './modules/ui-to-top';
 import Swiper 				from './modules/swiper';
 import ToggleMenu 		from './modules/toggle-menu';
 import Preloader  		from './modules/preloader';
+import Wow			  		from './modules/wow';
 
 // Instantiate a new object using our modules/classes
 var copyrightYear = new CopyrightYear();
@@ -13,6 +14,7 @@ var uitotop 			= new UIToTop();
 var swiper 				= new Swiper();
 var toggleMenu 		= new ToggleMenu();
 var preloader 		= new Preloader();
+var wow 					= new Wow();
 
 
 

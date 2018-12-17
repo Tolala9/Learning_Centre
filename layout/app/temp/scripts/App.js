@@ -90,17 +90,22 @@ var _preloader = __webpack_require__(5);
 
 var _preloader2 = _interopRequireDefault(_preloader);
 
+var _wow = __webpack_require__(6);
+
+var _wow2 = _interopRequireDefault(_wow);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Instantiate a new object using our modules/classes
-var copyrightYear = new _copyrightYear2.default(); // 3rd party packages from NPM
+// 3rd party packages from NPM
 
 // Our modules / classes 
-
+var copyrightYear = new _copyrightYear2.default();
 var uitotop = new _uiToTop2.default();
 var swiper = new _swiper2.default();
 var toggleMenu = new _toggleMenu2.default();
 var preloader = new _preloader2.default();
+var wow = new _wow2.default();
 
 /***/ }),
 /* 1 */
@@ -289,7 +294,8 @@ var Swiper = function () {
             isTouch = "ontouchstart" in window,
             onloadCaptchaCallback,
             plugins = {
-          swiper: $(".swiper-slider")
+          swiper: $(".swiper-slider"),
+          rdMailForm: $(".rd-mailform")
         };
 
         /**
@@ -357,28 +363,22 @@ var Swiper = function () {
                 duration,
                 nextSlideItem,
                 prevSlideItem;
-
             for (i = 0; i < prevSlide.length; i++) {
               prevSlideItem = $(prevSlide[i]);
-
               prevSlideItem.removeClass("animated").removeClass(prevSlideItem.attr("data-caption-animate")).addClass("not-animated");
             }
-
             for (i = 0; i < nextSlide.length; i++) {
               nextSlideItem = $(nextSlide[i]);
               delay = nextSlideItem.attr("data-caption-delay");
               duration = nextSlideItem.attr('data-caption-duration');
-
               var tempFunction = function tempFunction(nextSlideItem, duration) {
                 return function () {
                   nextSlideItem.removeClass("not-animated").addClass(nextSlideItem.attr("data-caption-animate")).addClass("animated");
-
                   if (duration) {
                     nextSlideItem.css('animation-duration', duration + 'ms');
                   }
                 };
               };
-
               setTimeout(tempFunction(nextSlideItem, duration), delay ? parseInt(delay, 10) : 0);
             }
           }
@@ -584,6 +584,77 @@ var Preloader = function () {
 }();
 
 exports.default = Preloader;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Wow = function () {
+  function Wow() {
+    _classCallCheck(this, Wow);
+
+    this.allMethods();
+  }
+
+  _createClass(Wow, [{
+    key: "allMethods",
+    value: function allMethods() {
+
+      (function () {
+
+        /**
+         * Global variables
+         */
+
+        var userAgent = navigator.userAgent.toLowerCase(),
+            initialDate = new Date(),
+            $document = $(document),
+            $window = $(window),
+            $html = $("html"),
+            $body = $('body'),
+            isDesktop = $html.hasClass("desktop"),
+            isRtl = $html.attr("dir") === "rtl",
+            isIE = userAgent.indexOf("msie") != -1 ? parseInt(userAgent.split("msie")[1], 10) : userAgent.indexOf("trident") != -1 ? 11 : userAgent.indexOf("edge") != -1 ? 12 : false,
+            isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+            isTouch = "ontouchstart" in window,
+            onloadCaptchaCallback;
+
+        /**
+         * Initialize All Scripts
+         */
+        $document.ready(function () {
+          var isNoviBuilder = window.xMode;
+
+          if (isDesktop && $html.hasClass("wow-animation") && $(".wow").length) {
+
+            new WOW({
+              boxClass: 'wow',
+              animateClass: 'animated',
+              offset: 0,
+              mobile: false,
+              live: true
+            }).init();
+          }
+        });
+      })();
+    }
+  }]);
+
+  return Wow;
+}();
+
+exports.default = Wow;
 
 /***/ })
 /******/ ]);
