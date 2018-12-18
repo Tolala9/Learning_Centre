@@ -3800,6 +3800,17 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
       -ms-transform: rotate(0deg);
           transform: rotate(0deg); }
 
+#overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.hide {
+  display: none; }
+
 .letter-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
