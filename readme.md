@@ -8,7 +8,7 @@ This project is commercial. Made by me from concept sketch to deploy on hosting.
 
 ### View the project
 
- [![N|Solid](https://i.ibb.co/PYJvq2x/design-button.png)](https://gallery.io/projects/MCHbtQVoQ2HCZSvTl_aeNqIh) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [![N|Solid](https://loyts.com.ua/)](https://ibb.co/hY5jKT) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ [![N|Solid](https://i.ibb.co/PYJvq2x/design-button.png)](https://gallery.io/projects/MCHbtQVoQ2HCZSvTl_aeNqIh) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [![N|Solid](https://i.ibb.co/47JrP8R/host-button.png)](https://loyts.com.ua/) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  **for viewing disign files you will need send access reques in Gallery service.*
 
 ### Some site content & features
