@@ -98,19 +98,24 @@ var _counter = __webpack_require__(7);
 
 var _counter2 = _interopRequireDefault(_counter);
 
+var _materialParallax = __webpack_require__(8);
+
+var _materialParallax2 = _interopRequireDefault(_materialParallax);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Instantiate a new object using our modules/classes
-var copyrightYear = new _copyrightYear2.default(); // 3rd party packages from NPM
+// 3rd party packages from NPM
 
 // Our modules / classes 
-
+var copyrightYear = new _copyrightYear2.default();
 var uitotop = new _uiToTop2.default();
 var swiper = new _swiper2.default();
 var toggleMenu = new _toggleMenu2.default();
 var preloader = new _preloader2.default();
 var wow = new _wow2.default();
 var counterAnimate = new _counter2.default();
+var paralax = new _materialParallax2.default();
 
 /***/ }),
 /* 1 */
@@ -767,6 +772,104 @@ var Counter = function () {
 }();
 
 exports.default = Counter;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Parallax = function () {
+  function Parallax() {
+    _classCallCheck(this, Parallax);
+
+    this.allMethods();
+  }
+
+  _createClass(Parallax, [{
+    key: "allMethods",
+    value: function allMethods() {
+      (function () {
+
+        /**
+         * Global variables
+         */
+
+        var userAgent = navigator.userAgent.toLowerCase(),
+            initialDate = new Date(),
+            $document = $(document),
+            $window = $(window),
+            $html = $("html"),
+            $body = $('body'),
+            isDesktop = $html.hasClass("desktop"),
+            isRtl = $html.attr("dir") === "rtl",
+            isIE = userAgent.indexOf("msie") != -1 ? parseInt(userAgent.split("msie")[1], 10) : userAgent.indexOf("trident") != -1 ? 11 : userAgent.indexOf("edge") != -1 ? 12 : false,
+            isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+            isTouch = "ontouchstart" in window,
+            onloadCaptchaCallback,
+            plugins = {
+          materialParallax: $(".parallax-container")
+        };
+
+        /**
+         * Initialize All Scripts
+         */
+        $document.ready(function () {
+          var isNoviBuilder = window.xMode;
+
+          /**
+           * Material Parallax
+           * @description Enables Material Parallax plugin
+           */
+          if (plugins.materialParallax.length) {
+            var i;
+
+            if (!isNoviBuilder && !isIE && !isMobile) {
+              plugins.materialParallax.parallax();
+
+              if (!isMobile) {
+                $window.scroll(function () {
+                  var transfromY = 1 - $window.scrollTop() / 250;
+
+                  $('.page-title-img').find('.parallax-content').css({
+                    'opacity': 1 - $window.scrollTop() / 250,
+                    'top': -200 + $window.scrollTop() / 3
+                  });
+                });
+              }
+            } else {
+
+              for (i = 0; i < plugins.materialParallax.length; i++) {
+                var parallax = $(plugins.materialParallax[i]),
+                    imgPath = parallax.data("parallax-img");
+
+                parallax.css({
+                  "background-image": 'url(' + imgPath + ')',
+                  "background-attachment": "scroll",
+                  "background-size": "cover"
+                });
+              }
+            }
+          }
+          ;
+        });
+      })();
+    }
+  }]);
+
+  return Parallax;
+}();
+
+exports.default = Parallax;
 
 /***/ })
 /******/ ]);

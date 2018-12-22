@@ -3661,7 +3661,6 @@ html.mobile .ui-to-top, html.tablet .ui-to-top {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(255, 255, 255, 0.8);
       z-index: -10; } }
 
 .page-title-wrapper {
@@ -4134,3 +4133,35 @@ html:not(.lt-ie10) .not-animated {
   100% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%); } }
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  z-index: 1; }
+  .parallax-container .shell {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+.material-parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; }
+  .material-parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 101%;
+    min-height: 101%;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center; }
+
+.page-title-img-caption .parallax-content {
+  position: relative; }
