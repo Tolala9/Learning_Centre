@@ -9,7 +9,8 @@ gulp.task('coreJs', function() {
 		'./app/assets/libs/Swiper_3.4.2/Swiper.js',
 		'./app/assets/libs/WOW/wow.js',
 		'./app/assets/libs/CountTo/count-to.js',
-		'./app/assets/libs/Material_Parallax/materialParallax.js'
+		'./app/assets/libs/Material_Parallax/materialParallax.js',
+		'./app/assets/libs/SmoothScroll/smooth-scroll.js'
 		])
 	.pipe(concat('core.min.js'))
 	// .pipe(uglify()) // minimize
