@@ -10,7 +10,8 @@ gulp.task('coreJs', function() {
 		'./app/assets/libs/WOW/wow.js',
 		'./app/assets/libs/CountTo/count-to.js',
 		'./app/assets/libs/Material_Parallax/materialParallax.js',
-		'./app/assets/libs/SmoothScroll/smooth-scroll.js'
+		'./app/assets/libs/SmoothScroll/smooth-scroll.js',
+		'./app/assets/libs/Device/device.js'
 		])
 	.pipe(concat('core.min.js'))
 	// .pipe(uglify()) // minimize
