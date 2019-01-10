@@ -39,7 +39,7 @@ class Wow{
 
     
 
-    if (isDesktop && $html.hasClass("wow-animation") && $(".wow").length) {
+    if ($html.hasClass("wow-animation") && $(".wow").length) { 
       
             new WOW({
                 boxClass: 'wow',

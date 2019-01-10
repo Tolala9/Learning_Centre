@@ -10490,7 +10490,7 @@ var Wow = function () {
         $document.ready(function () {
           var isNoviBuilder = window.xMode;
 
-          if (isDesktop && $html.hasClass("wow-animation") && $(".wow").length) {
+          if ($html.hasClass("wow-animation") && $(".wow").length) {
 
             new WOW({
               boxClass: 'wow',

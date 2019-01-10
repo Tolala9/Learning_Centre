@@ -10,11 +10,17 @@
   
   
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/styles/styles-e1889f082c.css"/>
+  <link rel="stylesheet" href="assets/styles/styles-1df9935857.css"/>
+
+  <!-- Vendor JS code -->
+  <script src="assets/scripts/Vendor-eb90982af6.js"></script>
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Raleway:400,500,600,700" rel="stylesheet">
+
   <!-- Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
@@ -25,6 +31,7 @@
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
 
+
   <!-- Theme Color -->
   <meta name="theme-color" content="#0095da">
   <!-- Windows Phone -->
@@ -32,6 +39,7 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
 
   <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -189,8 +197,8 @@
             <div class="img-wrapper">
 
               <picture>
-                <source srcset="assets/img/energy/heat-loss-3_lg.png" media="(min-width: 480px)">
-                  <img class="img-responsive" src="assets/img/energy/heat-loss-3_xs.png" alt="Втрати тепла в будинку"> 
+                <source class="lazyload" data-srcset="assets/img/energy/heat-loss-3_lg.png" media="(min-width: 480px)">
+                  <img class="img-responsive lazyload" data-src="assets/img/energy/heat-loss-3_xs.png" alt="Втрати тепла в будинку"> 
                 </picture>
               </div>
             </div>
@@ -209,11 +217,9 @@
               <div class="img-wrapper">
 
                 <picture>
-                  <source srcset="assets/img/energy/heat-loss-1_lg.png" media="(min-width: 1200px)">
+                  <source class="lazyload" data-srcset="assets/img/energy/heat-loss-1_lg.png" media="(min-width: 1200px)">
 
-                    <source srcset="assets/img/energy/heat-loss-1_md.jpg" media="(min-width: 400px)">
-
-                     <img class="img-section"  src="assets/img/energy/heat-loss-1_xs.png" alt="Львівський Обласний Учбовий Центр">
+                     <img class="img-section lazyload"  data-src="assets/img/energy/heat-loss-1_md.jpg" alt="Львівський Обласний Учбовий Центр">
                    </picture>
 
                  </div>
@@ -273,14 +279,14 @@
 
                   <div class="img-wrapper justify-around padding-t-30 wow fadeInLeft" data-wow-delay=".5s">
                     <picture>
-                      <source srcset="assets/img/energy/flag_lg.png" media="(min-width: 400px)">
+                      <source class="lazyload" data-srcset="assets/img/energy/flag_lg.png" media="(min-width: 400px)">
 
-                        <img  src="assets/img/energy/flag_xs.png" alt="Львівський Обласний Учбовий Центр">
+                        <img class="lazyload" data-src="assets/img/energy/flag_xs.png" alt="Львівський Обласний Учбовий Центр">
                       </picture>
                       <picture class="padding-l-30">
-                        <source srcset="assets/img/energy/undp_lg.png" media="(min-width: 400px)">
+                        <source class="lazyload" data-srcset="assets/img/energy/undp_lg.png" media="(min-width: 400px)">
 
-                          <img  src="assets/img/energy/undp_xs.png" alt="Львівський Обласний Учбовий Центр">
+                          <img class="lazyload"  data-src="assets/img/energy/undp_xs.png" alt="Львівський Обласний Учбовий Центр">
                         </picture>  
                       </div>
 
@@ -295,11 +301,9 @@
                     <div class="img-wrapper">
 
                       <picture>
-                        <source srcset="assets/img/energy/heat-loss-21_lg.jpg" media="(min-width: 1200px)">
+                        <source class="lazyload" data-srcset="assets/img/energy/heat-loss-21_lg.jpg" media="(min-width: 1200px)">
 
-                          <source srcset="assets/img/energy/heat-loss-2_md.jpg" media="(min-width: 400px)">
-
-                           <img class="img-section"  src="assets/img/energy/heat-loss-2_xs.jpg" alt="Львівський Обласний Учбовий Центр">
+                           <img class="img-section lazyload"  data-src="assets/img/energy/heat-loss-2_md.jpg" alt="Львівський Обласний Учбовий Центр">
                          </picture>
 
                        </div>
@@ -331,8 +335,8 @@
               <a href="#">
 
                 <picture>
-                  <source srcset="assets/img/logo/logo_footer_lg.png" media="(min-width: 480px)">
-                    <img class="img-responsive" src="assets/img/logo/logo_footer_xs.png" alt="Львівський Обласний Учбовий Центр"> 
+                  <source class="lazyload" data-srcset="assets/img/logo/logo_footer_lg.png" media="(min-width: 480px)">
+                    <img class="img-responsive lazyload" data-src="assets/img/logo/logo_footer_xs.png" alt="Львівський Обласний Учбовий Центр"> 
                   </picture>
                 </a>
                 <div class="page-contacts__logo-text">
@@ -428,7 +432,7 @@
             <!-- for testing js -->
             <!-- <script src="/temp/scripts/allCore.min.js"></script> --> 
 
-            <script src="assets/scripts/App-8db718b0cd.js"></script>
+            <script src="assets/scripts/App-59a5a28805.js"></script>
 
 
             </html>
