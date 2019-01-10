@@ -8,6 +8,6 @@ gulp.task('scripts', function(callback) {
 			}
 			console.log(stats.toString());
 			callback();
-		});
+		}); 
 });
 
