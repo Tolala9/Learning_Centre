@@ -6,7 +6,11 @@ svg2png = require('gulp-svg2png');
 
 var config = {
   shape: {
-    spacing: {
+    dimension: { // Set maximum dimensions
+        maxWidth: 64,
+        maxHeight: 64
+      },
+    spacing: { // Add padding
       padding: 1
     }
   },

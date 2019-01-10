@@ -7,6 +7,7 @@ addition
 
 # On layout
 /**/node_modules/
+/**/docs/
 /**/dist/
 /**/.git/
 /**/app/css/
